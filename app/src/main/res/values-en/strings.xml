@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Engineering Menu Launcher</string>
+    <string name="main_screen_message">Click to open the engineering menu</string>
+    <string name="pin_hint">Enter PIN: 1950</string>
+    <string name="btn_start_accessibility">Auto-input settings - without ROOT</string>
+    <string name="launch_button_text">Launch Engineering Menu - Root</string>
+    <string name="app_author">"Author: ~Igor~(4PDA)"</string>
+    <string name="tcl_logo_description">Логотип TCL</string>
+</resources>

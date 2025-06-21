@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">Engineering Menu Launcher</string>
+    <string name="main_screen_message" translatable="false">Нажмите, чтобы открыть инженерное меню</string>
+    <string name="pin_hint">Введите PIN: 1950</string>
+    <string name="btn_start_no_root_mode" translatable="false">Запустить инженерное меню - без ROOT</string>
+    <string name="btn_start_root_mode" translatable="false">Запустить инженерное меню - Root</string>
+    <string name="app_author">"Автор: ~Игорь~(4PDA)"</string>
+    <string name="tcl_logo_description">Логотип TCL</string>
+</resources>

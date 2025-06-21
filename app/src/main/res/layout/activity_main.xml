@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111">
+
+
+    <!-- Логотип TCL -->
+    <ImageView
+        android:id="@+id/tcl_logo"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_gravity="top|center_horizontal"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_tcl_logo" />
+
+    <!-- Основной контент -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <!-- Пустая подсказка (исправлена) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Подсказка с PIN -->
+        <TextView
+            android:id="@+id/tv_pin_hint"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#00222222"
+            android:padding="12dp"
+            android:text="@string/pin_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!-- Сообщение пользователю -->
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#00222222"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="@string/main_screen_message"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Кнопка запуска с root -->
+        <Button
+            android:id="@+id/btn_root_mode"
+            android:layout_width="345dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_rounded"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusDown="@id/btn_no_root_mode"
+            android:text="@string/btn_start_root_mode"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Кнопка без root -->
+        <Button
+            android:id="@+id/btn_no_root_mode"
+            android:layout_width="380dp"
+            android:layout_height="56dp"
+            android:background="@drawable/btn_rounded_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusUp="@id/btn_root_mode"
+            android:padding="12dp"
+            android:text="@string/btn_start_no_root_mode"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Автор справа внизу -->
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:alpha="0.5"
+        android:padding="8dp"
+        android:text="@string/app_author"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        tools:ignore="TextContrastCheck" />
+</FrameLayout>
